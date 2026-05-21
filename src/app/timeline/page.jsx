@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 
 export default function Timeline() {
   const [timeline, setTimeline] = useState([]);
+  const [filter, setFilter] = useState("All");
 
   useEffect(() => {
     const savedTimeline = JSON.parse(localStorage.getItem("timeline") || "[]");
@@ -18,12 +19,15 @@ export default function Timeline() {
         return <img src="/text.png" alt="Text" className="w-6 h-6" />;
       case "video":
         return <img src="/video.png" alt="Video" className="w-6 h-6" />;
-      case "meetup":
-        return <div className="text-2xl">🤝</div>;
       default:
-        return <div className="text-2xl">📝</div>;
+        return null;
     }
   };
+
+  // Filter the timeline based on the selected type
+  const filteredTimeline = filter === "All" 
+    ? timeline 
+    : timeline.filter(entry => entry.type.toLowerCase() === filter.toLowerCase());
 
   return (
     <div className="bg-[#F8F9FA] min-h-screen pt-10 pb-20 px-4 sm:px-10 lg:px-[100px] xl:px-[200px]">
@@ -31,17 +35,20 @@ export default function Timeline() {
         <h1 className="text-4xl font-bold text-gray-800 mb-6">Timeline</h1>
 
         <div className="mb-8 w-64">
-          <select className="w-full bg-white border border-gray-200 text-gray-500 text-sm rounded-lg py-3 px-4 outline-none shadow-sm cursor-pointer">
-            <option>Filter timeline</option>
-            <option>Call</option>
-            <option>Text</option>
-            <option>Video</option>
-            <option>Meetup</option>
+          <select 
+            value={filter}
+            onChange={(e) => setFilter(e.target.value)}
+            className="w-full bg-white border border-gray-200 text-gray-700 text-sm rounded-lg py-3 px-4 outline-none shadow-sm cursor-pointer"
+          >
+            <option value="All">All Interactions</option>
+            <option value="Call">Call</option>
+            <option value="Text">Text</option>
+            <option value="Video">Video</option>
           </select>
         </div>
 
         <div className="flex flex-col gap-4">
-          {timeline.length === 0 ? (
+          {filteredTimeline.length === 0 ? (
             <div className="text-center py-20 bg-white rounded-xl border border-gray-100 shadow-sm">
               <p className="text-gray-500">No interactions logged yet.</p>
               <p className="text-sm text-gray-400 mt-2">Go to a friend's details page to check-in!</p>
