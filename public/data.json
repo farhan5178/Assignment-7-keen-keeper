@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah Jenkins",
+    "picture": "https://i.pravatar.cc/150?u=sarah",
+    "email": "sarah.jenkins@example.com",
+    "days_since_contact": 5,
+    "status": "on_track",
+    "tags": ["college", "book club"],
+    "bio": "Met in our freshman year dorm. We share a love for science fiction novels.",
+    "goal": 14,
+    "next_due_date": "2026-05-29"
+  },
+  {
+    "id": 2,
+    "name": "David Chen",
+    "picture": "https://i.pravatar.cc/150?u=david",
+    "email": "d.chen.dev@example.com",
+    "days_since_contact": 22,
+    "status": "overdue",
+    "tags": ["work", "mentorship"],
+    "bio": "Former colleague at TechNova. Great sounding board for career advice.",
+    "goal": 21,
+    "next_due_date": "2026-05-19"
+  },
+  {
+    "id": 3,
+    "name": "Emily Rodriguez",
+    "picture": "https://i.pravatar.cc/150?u=emily",
+    "email": "emily.rod@example.com",
+    "days_since_contact": 12,
+    "status": "needs_attention",
+    "tags": ["childhood", "hometown"],
+    "bio": "Grew up on the same street. We always try to catch up over coffee when I visit home.",
+    "goal": 14,
+    "next_due_date": "2026-05-22"
+  },
+  {
+    "id": 4,
+    "name": "Marcus Johnson",
+    "picture": "https://i.pravatar.cc/150?u=marcus",
+    "email": "mj_fitness@example.com",
+    "days_since_contact": 2,
+    "status": "on_track",
+    "tags": ["gym", "running"],
+    "bio": "Running partner training for the upcoming city marathon together.",
+    "goal": 7,
+    "next_due_date": "2026-05-25"
+  },
+  {
+    "id": 5,
+    "name": "Jessica Taylor",
+    "picture": "https://i.pravatar.cc/150?u=jessica",
+    "email": "jtaylor_art@example.com",
+    "days_since_contact": 45,
+    "status": "overdue",
+    "tags": ["art class", "creative"],
+    "bio": "Met in an evening pottery class. Always inspiring me to be more creative.",
+    "goal": 30,
+    "next_due_date": "2026-05-05"
+  },
+  {
+    "id": 6,
+    "name": "Alex Mercer",
+    "picture": "https://i.pravatar.cc/150?u=alex",
+    "email": "alex.mercer.travels@example.com",
+    "days_since_contact": 18,
+    "status": "needs_attention",
+    "tags": ["travel", "photography"],
+    "bio": "Met backpacking in Thailand. We usually swap travel itineraries and photography tips.",
+    "goal": 30,
+    "next_due_date": "2026-06-01"
+  },
+  {
+    "id": 7,
+    "name": "Samantha Lee",
+    "picture": "https://i.pravatar.cc/150?u=samantha",
+    "email": "sam.lee.foodie@example.com",
+    "days_since_contact": 8,
+    "status": "on_track",
+    "tags": ["college", "foodie"],
+    "bio": "University roommate. We are on a mission to try every ramen place in the city.",
+    "goal": 14,
+    "next_due_date": "2026-05-26"
+  }
+]
