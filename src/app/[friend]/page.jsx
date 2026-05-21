@@ -32,7 +32,20 @@ export default function FriendDetails() {
     }
   }, [currentId]);
 
-  const handleCheckIn = (type) => {
+   const handleCheckIn = (type) => {
+    const newEntry = {
+      id: Date.now(),
+      type: type,
+      friendId: friendData.id,
+      friendName: friendData.name,
+      title: `${type} with ${friendData.name}`, 
+      date: new Date().toISOString(), 
+    };
+
+
+    const existingTimeline = JSON.parse(localStorage.getItem("timeline") || "[]");
+    localStorage.setItem("timeline", JSON.stringify([newEntry, ...existingTimeline]));
+
     toast.success(`Added a ${type} entry to the Timeline!`, {
       position: "top-center",
       autoClose: 3000,
@@ -43,6 +56,7 @@ export default function FriendDetails() {
       theme: "light",
     });
   };
+
 
   if (loading) {
     return (
