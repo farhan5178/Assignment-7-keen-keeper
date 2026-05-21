@@ -6,7 +6,7 @@ export default function FriendCard({ friend }) {
 
   return (
    
-    <Link href={`/friend/${id}`} className="block">
+    <Link href={`/${id}`} className="block">
       <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100 flex flex-col items-center text-center gap-2 h-full">
         {/* Avatar */}
         <img
