@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🤝 KeenKeeper
 
-## Getting Started
+**KeenKeeper** is a beautifully designed, personal relationship management application. It serves as your personal shelf of meaningful connections, allowing you to easily browse, tend, and nurture the relationships that matter most to you. Never lose touch with your close friends again!
 
-First, run the development server:
+## 🚀 Technologies Used
+This project was built using modern web development tools:
+- **Next.js** - React framework for fast and optimized routing.
+- **React.js** - UI library for interactive components.
+- **Tailwind CSS** - Utility-first CSS framework for rapid and responsive UI styling.
+- **React Icons & React Toastify** - For beautiful typography icons and seamless user notifications.
+- **Local Storage API** - For persisting data locally in the browser.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Key Features
+1. **Interactive Friend Dashboard:** Visually track the status of your relationships with dynamic badges (On-Track, Almost Due, Overdue) and view how many days have passed since your last contact.
+2. **Quick Check-Ins:** Easily log interactions directly from a friend's details page. With just a single click, you can log a Call, Text, or Video chat and receive a beautiful toast notification.
+3. **Activity Timeline & Filtering:** Keep a historical record of all your interactions. Visit the Timeline page to filter your past check-ins by type (Call, Text, Video) and see exactly when you last connected with someone.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Getting Started
+To run this project locally:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+1. Clone this repository.
+2. Install the dependencies using `npm install`.
+3. Start the development server using `npm run dev`.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Live Link 
+https://assignment-7-keen-keeper-nine.vercel.app/
