@@ -26,7 +26,7 @@ export default function Home() {
       <HeroCard />
       
       <div className="px-4 sm:px-10 lg:px-[200px] py-10">
-        <h2 className="text-3xl font-bold text-[#244D3F] mb-6">Your Friends</h2>
+        <h2 className="text-3xl font-bold  mb-6">Your Friends</h2>
         
         {loading ? (
           <div className="flex flex-col items-center justify-center py-20 gap-3">
@@ -44,3 +44,4 @@ export default function Home() {
     </>
   );
 }
+

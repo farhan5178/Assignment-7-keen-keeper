@@ -8,11 +8,12 @@ import { TfiStatsUp } from "react-icons/tfi";
 
 export default function Navbar() {
   const pathname = usePathname();
+
   const getLinkClass = (path) => {
-    const baseClass = "btn text-xs sm:text-sm md:text-base px-2 sm:px-3 border-none ";
+    const baseClass = "btn btn-ghost sm:btn-md text-xl sm:text-sm md:text-base px-2 sm:px-3 border-none bg-transparent ";
     return pathname === path
-      ? baseClass + "bg-[#244D3F] text-white hover:bg-[#1a382e]"
-      : baseClass + "bg-gray-50 text-gray-700 hover:bg-gray-100";
+      ? baseClass + "text-[#244D3F] sm:bg-[#244D3F] sm:text-white sm:hover:bg-[#1a382e]"
+      : baseClass + "text-gray-500 sm:bg-gray-50 sm:text-gray-700 sm:hover:bg-gray-100";
   };
 
   return (
@@ -32,17 +33,17 @@ export default function Navbar() {
       <div className="navbar-center hidden lg:flex">
       </div>
       <div className="navbar-end gap-1 sm:gap-2 md:gap-4">
-
+        
         <Link href="/" className={getLinkClass('/')}>
           <SlHome />
           <span className="hidden sm:inline">Home</span>
         </Link>
-
+        
         <Link href="/timeline" className={getLinkClass('/timeline')}>
           <IoTimeOutline className="text-lg" />
           <span className="hidden sm:inline">Timeline</span>
         </Link>
-
+        
         <Link href="/stats" className={getLinkClass('/stats')}>
           <TfiStatsUp />
           <span className="hidden sm:inline">Stats</span>
